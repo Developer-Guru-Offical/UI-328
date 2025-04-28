@@ -1,0 +1,41 @@
+
+/*************************** this code for xyz demo **************/
+.msg
+{
+  background-color:red;
+  height:50px;
+  width:100%;
+  text-align: center;
+  color:white;
+  height:auto;
+  padding:30px;
+}
+/*********************** this the code for lmn DEMO *************/
+.msg1{
+    background-color:purple;
+    height:50px;
+    width:100%;
+    text-align: center;
+    color:white;
+    height:auto;
+    padding:30px; 
+}
+
+/*************************** Navbar ************************/
+.navbar
+{
+  list-style-type:none;
+}
+
+.navbar li a{
+  text-decoration:none;
+  background-color:purple;
+  color:white;
+  float:left;
+  padding:10px;
+}
+
+.navbar li a:hover{
+  background-color:orangered;
+  
+}
