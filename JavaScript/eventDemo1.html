@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Events DEMO </title>
+</head>
+
+<body>
+  <!---------------------- Events ---------------------->
+  <button onclick="clickMe()"> Click Me </button><br><br>
+  <div id="r1"></div>
+  <script>
+
+    function clickMe() {
+      document.getElementById('r1').innerHTML = 'Name:<input type="text" id="name"> Email:<input type="text" id="email"> Mobile:<input type="text" id="mobile"><br><br>Product:<input type="text" id="product"> Prize:<input type="text" id="prize" onchange="product()"> Discount:<input type="text" id="dis"><br><br>Gst:<input type="text" id="gst"> tax:<input type="text" id="tax"> Total Amount :<input type="text" id="tamount" disabled> &nbsp;&nbsp;&nbsp<button>ADD</button><br><br>';
+    }
+
+    function product()
+    {
+      //alert('success');
+      var prize=parseInt(document.getElementById('prize').value);
+               document.getElementById('tamount').value=prize;
+    }
+
+  </script>
+</body>
+
+</html>

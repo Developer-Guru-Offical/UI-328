@@ -1,0 +1,102 @@
+.navbarSection{
+    background-color:red;
+    height:80px;
+    width:100%;
+    float:left;
+}
+
+.leftSection{
+    background-color:purple;
+    height:80px;
+    width:25%;
+    float:left;
+}
+.rightSection{
+    background-color:black;
+    height:80px;
+    width:75%;
+    float:left;
+}
+
+.navbar{
+    list-style-type: none;
+}
+
+.navbar li a {
+    text-decoration:none;
+    background-color:black;
+    color:white;
+    float:left;
+    padding:10px;
+}
+
+.homeSection{
+    background-color:green;
+    height:550px;
+    width:100%;
+    float:left;
+}
+.homeSection h1{
+    text-align:center;
+    color:white;
+}
+
+.aboutSection{
+    background-color:orangered;
+    height:550px;
+    width:100%;
+    float:left; 
+}
+
+.aboutSection h1{
+    text-align:center;
+    color:white;
+}
+
+.serviceSection{
+    background-color:purple;
+    height:550px;
+    width:100%;
+    float:left; 
+}
+
+.serviceSection h1{
+    text-align:center;
+    color:white;
+}
+
+.productSection{
+    background-color:black;
+    height:550px;
+    width:100%;
+    float:left; 
+}
+
+.productSection h1{
+    text-align:center;
+    color:white;
+}
+
+.gallerySection{
+    background-color:yellowgreen;
+    height:550px;
+    width:100%;
+    float:left; 
+}
+
+.gallerySection h1{
+    text-align:center;
+    color:white;
+}
+
+.reviewSection{
+    background-color:red;
+    height:550px;
+    width:100%;
+    float:left; 
+}
+
+.reviewSection h1{
+    text-align:center;
+    color:white;
+}

@@ -1,0 +1,95 @@
+
+/**************************** Background-Property ************************/
+.backgroundp{
+  /**background-color:purple;**/
+  background-image:url('cricket1.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:300px;
+  width:100%;
+  float:left;
+}
+.topSection{
+    width:100%;
+    float:left;
+    height:300px;
+    background-color:red;
+}
+.bottomSection
+{
+    width:100%;
+    float:left;
+    height:600px;
+    background-color:lightgreen;
+}
+
+/********************** Margin-Property ***********************/ 
+.margin{
+    background-color:purple;
+    height:100px;
+    /* margin:50px; */
+    /* margin:20px 40px 60px 80px; */
+    /* margin:20px 40px 60px; */
+    margin:40px 80px;
+}
+
+.padding{
+    background-color:red;
+    color:white;
+    width:337px;
+    /* padding:30px; */
+    /* padding:20px 40px 60px 80px; */
+    /* padding: 20px 40px 60px; */
+    padding:40px 80px
+
+}
+
+/********************************** Text-Property **************************/
+.textP{
+    /* text-transform:capitalize ; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+    /* text-decoration:overline;
+    letter-spacing: 10px;
+    word-spacing: 20px; */
+    line-height:40px;
+}
+
+/******************************** Border-Property *************************/
+.border{
+    /* border:1px groove red; */
+    border-bottom:1px solid purple; 
+    border-left:1px solid green;
+    border-top:3px solid blue;
+    border-right:5px solid orangered;
+}
+
+/******************************** border-radius ************************/
+
+.borderRadius{
+    border:2px solid purple;
+    height:200px;
+    width:200px;
+    /* border-radius: 10px; */
+    /* border-radius:5px 10px 15px 20px; */
+    /* border-radius:5px 10px 15px; */
+    border-radius:10px 40px;
+}
+.imageBorderRadius{
+    height:200px;
+    width:200px;
+    /* border-radius:50%; */
+    /* border-radius:5px 10px 15px 20px; */
+    /* border-radius:10px 40px 30px; */
+    border-radius:40px 10px;
+}
+.imageBorderRadius:hover{
+    height:210px;
+    width:210px;
+    
+}
+
+/****************************** Shadow Property *************************/ 
+
