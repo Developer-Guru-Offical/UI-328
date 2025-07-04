@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+  <title>loops </title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <!---------------------loops -------------------->
+  <!-- 1. while 
+    2. do_while 
+    3. for  -->
+
+  <script>
+    for (i = 0; i <= 10; i++) {
+      //console.log(i); //0,1,2,.......9,10.
+    }
+
+    for (i = 10; i >= 0; i--) {
+      console.log(i); //10,9,8,.......1,0, 
+    }
+
+    var x=91;
+    while(x<100) //92<100
+    {
+       document.write('<span style="color:purple">'+x+'</span>'+"<br>"); //91,92,.........99,
+       //document.getElementById('demo').innerHTML=x;
+       x++;
+    }
+
+    var z=100;
+    do{
+     console.log(z);//100
+     }
+    while(z>100); //
+    z++;
+
+  </script>
+
+</body>
+
+</html>

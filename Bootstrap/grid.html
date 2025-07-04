@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Grid Classes </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Learn in-demand skills & build stunning web apps. Our full-stack development course covers everything you need. Go from beginner to job-ready. Start now!">
+    <meta name="keywords" content="full stack development course">
+    <!------------------------------ External CSS Link ----------------------------------->
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!------------------------------- External Js Link--------------------------------->
+    <script src="./js/bootstrap.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!------------------------------- Grid classes ---------------------------->
+
+    <!-- col-12 
+     6+6=12 
+     3+3+3+3=12 
+     9+3=12 
+     6+4+2=12
+     8+4=12 
+     5+4+3=12 
+
+
+    1. xs (xtra small)      - Mobile             - <=512px   - <=512px 
+    2. sm (small)           - Mobile + Tab       - >=512px   - >=512px but <=752px
+    3. md (medium)          - Tab + Mini laptop  - >=752px   - >=752px but <=956px 
+    4. lg (large)           - laptop             - >=956px   - >=956px but <=1200px
+    5. xl (xtra large)      - laptop+ Desktop    - >=1200px  - >=1200px but <=1400px
+    6. xll(xtra xtra large) - Desktop            - >=1400px  - >=1400px  -->
+
+    <div class="container-fluid">
+        <!-------------------- First Row ------------------------>
+        <div class="row">
+            <div class="col-md-6 bg-primary" style="height:100px;"></div>
+            <div class="col-md-6 bg-danger" style="height:100px;"></div>
+        </div>
+        <!----------------------- Second Row---------------------------->
+        <div class="row">
+            <div class="col-md-4 bg-dark" style="height:100px;"></div>
+            <div class="col-md-4 bg-warning" style="height:100px;"></div>
+            <div class="col-md-4 bg-success" style="height:100px;"></div>
+        </div>
+
+        <!----------------------- Third Row---------------------------->
+        <div class="row">
+            <div class="col-md-3 bg-danger" style="height:100px;"></div>
+            <div class="col-md-3 bg-primary" style="height:100px;"></div>
+            <div class="col-md-3 bg-dark" style="height:100px;"></div>
+            <div class="col-md-3 bg-warning" style="height:100px;"></div>
+        </div>
+
+        <!----------------------- Fourth Row---------------------------->
+        <div class="row">
+            <div class="col-md-2 bg-success" style="height:100px;"></div>
+            <div class="col-md-2 bg-warning" style="height:100px;"></div>
+            <div class="col-md-2 bg-dark" style="height:100px;"></div>
+            <div class="col-md-3 bg-danger" style="height:100px;"></div>
+            <div class="col-md-3 bg-primary" style="height:100px;"></div>
+        </div>
+
+        <!----------------------- Fifth Row---------------------------->
+        <div class="row">
+            <div class="col-md-2 bg-dark" style="height:100px;"></div>
+            <div class="col-md-2 bg-primary" style="height:100px;"></div>
+            <div class="col-md-2 bg-success" style="height:100px;"></div>
+            <div class="col-md-2 bg-warning" style="height:100px;"></div>
+            <div class="col-md-2 bg-dark" style="height:100px;"></div>
+            <div class="col-md-2 bg-success" style="height:100px;"></div>
+        </div>
+
+        <!----------------------- six Row---------------------------->
+        <div class="row">
+            <div class="col-md-8 bg-danger" style="height:300px;"></div>
+            <div class="col-md-4 bg-warning" style="height:300px;">
+                <div class="row">
+                    <div class="col-md-12 bg-primary" style="height:150px;">
+                        <div class="row">
+                            <div class="col-md-6 bg-primary" style="height:150px;">
+                                <div class="row">
+                                    <div class="col-md-10 bg-white m-3" style="height:120px;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 bg-warning" style="height:150px;">
+                                <div class="row">
+                                    <div class="col-md-10 bg-white m-3" style="height:120px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 bg-dark" style="height:150px;">
+                        <div class="row">
+                            <div class="col-md-6 bg-warning" style="height:150px;">
+                                <div class="row">
+                                    <div class="col-md-10 bg-white m-3" style="height:120px;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 bg-primary" style="height:150px;">
+                                <div class="row">
+                                    <div class="col-md-10 bg-white m-3" style="height:120px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

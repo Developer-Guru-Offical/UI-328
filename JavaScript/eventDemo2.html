@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Events DEMO </title>
+</head>
+
+<body>
+  <!---------------------- Events ---------------------->
+  <button onclick="row1()"> Click Me </button><br><br>
+  <div id="r1"></div><br><br>
+  <div id="r2"></div><br><br>
+  <div id="r3"></div><br><br>
+   <div id="r4"></div><br><br>
+  <script>
+   function row1()
+   {
+      document.getElementById('r1').innerHTML='Name: <input type="text" id="name"> &nbsp;&nbsp;Mobile: <input type="text" id="Mobile">&nbsp;&nbsp;Email: <input type="text" id="email">&nbsp;&nbsp;<button onclick="row2()">ADD</button>';
+   }
+
+   function row2()
+   {document.getElementById('r2').style.display='block';
+     document.getElementById('r2').innerHTML='DOB: <input type="text" id="dob"> &nbsp;&nbsp;Gender: <input type="text" id="gender">&nbsp;&nbsp;Course: <input type="text" id="course">&nbsp;&nbsp;<button onclick="row3()">ADD</button>&nbsp;&nbsp;<button onclick="remove3();">REMOVE</button>';
+   }
+
+    function row3()
+   {
+    document.getElementById('r3').style.display='block';
+     document.getElementById('r3').innerHTML='city: <input type="text" id="city"> &nbsp;&nbsp;Pincode: <input type="text" id="code">&nbsp;&nbsp;Landmark: <input type="text" id="landmark">&nbsp;&nbsp;<button onclick="row4()">ADD</button>&nbsp;&nbsp;<button onclick="remove2()">REMOVE</button>';
+   }
+
+    function row4()
+   {
+      document.getElementById('r4').style.display='block';
+     document.getElementById('r4').innerHTML='Adhar: <input type="text" id="adhar"> &nbsp;&nbsp;Pancard: <input type="text" id="pan">&nbsp;&nbsp;Address: <input type="text" id="address">&nbsp;&nbsp;<button>SUBMIT</button>&nbsp;&nbsp;<button onclick=remove1();>REMOVE</button>';
+   }
+
+   function remove1()
+   {
+     //document.getElementById('r4').remove();
+     document.getElementById('r4').style.display='none';
+   }
+
+   function remove2()
+   {
+       document.getElementById('r3').style.display='none';
+   }
+
+    function remove3()
+   {
+       document.getElementById('r2').style.display='none';
+   }
+
+     function remove4()
+   {
+       document.getElementById('r1').style.display='none';
+   }
+  </script>
+</body>
+
+</html>

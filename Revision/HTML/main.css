@@ -1,0 +1,535 @@
+.demo{
+    background-color:red;
+    color:white;
+    text-align:center;
+}
+/******************* Background-Property *********************************/
+.bgProperty{
+    /* background-color:purple; */
+    background-image:url('cricket1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:300px;
+}
+/*************************** Margin-padding ******************************/
+.margin{
+    background-color:red;
+    height:100px;
+    /* margin:50px; */
+    /* margin:20px 0px 0px 80px; */
+    /* margin:20px 40px 60px; */
+    margin:40px 80px;
+}
+.padding{
+    background-color: purple;
+    width:140px;
+    color:white;
+    /* padding:50px; */
+    /* padding:20px 40px 60px 80px; */
+    /* padding:20px 40px 60px; */
+    padding:30px 60px;
+}
+
+/********************* border ***********************/
+.border{
+    border:2px solid purple;
+    text-align:center;
+    /* border-radius:5px; */
+    /* border-radius:5px 10px 15px 20px; */
+    /* border-radius:5px 20px 5px; */
+    border-radius:5px 10px;
+}
+
+
+/********************* Text-propety ******************/ 
+.textProperty{
+    text-align:center;
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+    /* text-decoration:underline; */
+    /* text-decoration:overline; */
+    text-decoration:line-through;
+    /* text-decoration:none; */
+    /* line-height: 30px; */
+    word-spacing: 20px;
+}
+
+
+/************************** Positions *****************/ 
+.absolute{
+    background-color:purple;
+    height:100px;
+    width:200px;
+    position:absolute;
+    left:450px;
+    bottom:230px;
+}
+
+.fixed{
+    background-color:purple;
+    height:100px;
+    width:100%;
+    position:fixed;
+    top:0px;
+    }
+.sticky{
+    background-color:orangered;
+    height:100px;
+    width:100%;
+    position:sticky;
+    top:0px;
+}
+
+.A{
+    background-color: orangered;
+    height:200px;
+    width:50%;
+    float:left;
+    position:relative;
+}
+.A1{
+    background-color: black;
+    height:150px;
+    width:90%;
+    float:left;
+    position:absolute;
+    right:30px;
+    top:25px;
+}
+
+.A11{
+    background-color:white;
+    height:100px;
+    width:90%;
+    float:left;
+    position:absolute;
+    right:30px;
+    top:25px; 
+}
+.B{
+    background-color:green;
+    height:200px;
+    width:50%;
+    float:left;
+}
+
+/********************** DROPDOWN DEMO******************/
+
+.dropdownBtn{
+    background-color:black;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.dropdownMenu a{
+    text-decoration:none;
+    background-color:orangered;
+    color:white;
+    padding:5px;
+    display: block;
+    text-align:center;
+}
+.dropdownMenu a:hover{
+  
+    background-color:purple;
+    color:white;
+}
+
+.dropdownMenu{
+    position:absolute;
+    display:none;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown:hover .dropdownMenu{
+    display:block;
+}
+
+/****************** overflow ***********************/
+.overflow{
+    border:4px solid red;
+    height:100px;
+    /* overflow:hidden; */
+    /* overflow:scroll; */
+    /* overflow-y: scroll; */
+    overflow-x:scroll;  
+}
+
+.textPosition{
+    color:red;
+    /* margin:10px 10px 10px 10px; */
+}
+.mainDiv{
+    position:absolute;
+    z-index:-1;
+}
+
+
+/******************** Images Types ******************/ 
+.circle{
+    margin:auto;
+    display:block;
+    border-radius:50%;
+    height:300px;
+    width:300px;
+}
+
+.thumbnail{
+    margin:auto;
+    display:block;
+    border:5px groove red;
+    padding:5px;
+    border-radius:5px;
+    height:300px;
+    width:300px;
+}
+.thumbnail:hover{
+    height:310px;
+    width:310px;
+}
+/***************************** btnl-link **************************/
+.btn{
+    background-color:red;
+    color:white;
+    padding:5px 10px;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:black;
+}
+
+.linkBtn{
+    text-decoration:none;
+    background-color:purple;
+    color:white;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.linkBtn:hover{
+   background-color:goldenrod;
+   color:blueviolet;
+}
+
+/**************************** Pagination ***************************/
+.pagination{
+    list-style-type: none;
+}
+
+.pagination li a{
+    text-decoration:none;
+    background-color:orangered;
+    float:left;
+    color:white;
+    padding:5px 10px;
+    border:1px solid white;
+    border-radius:5px;
+}
+
+/**************************** gradient Effect **************/ 
+.gradient
+{
+  background-color:red;
+  background-image: linear-gradient(30deg, purple 50%,green );
+  height:400px;
+  width:100%;
+}
+
+/****************************** Disply Block *******************************/
+
+.displayBlock a
+{
+   display:block;
+}
+
+.displayInline p{
+    display:inline-block;
+    /* display:flex; */
+    background-color:purple;
+    color:white;
+}
+
+/********************************** Max-Min *************************/
+.maxWidth{
+    background-color:red;
+    height:100px;
+    max-width:50%;
+    width:25%;
+}
+
+.minWidth{
+    background-color:purple;
+    height:100px;
+    min-width:50%;
+    width:80%;  
+}
+
+/******************************** Media Query ************************/ 
+
+.m1{
+    background-color:red;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m2{
+    background-color:blue;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m3{
+    background-color:green;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m4{
+    background-color:orange;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+ .m1{
+    background-color:red;
+    height:200px;
+    width:47%;
+    float:left;
+    margin-left:20px;
+}
+.m2{
+    background-color:blue;
+    height:200px;
+    width:47%;
+    float:left;
+    margin-left:20px;
+}
+.m3{
+    background-color:green;
+    height:200px;
+    width:47%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+.m4{
+    background-color:orange;
+    height:200px;
+    width:47%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+}
+
+@media screen and (max-width: 850px) {
+ .m1{
+    background-color:red;
+    height:200px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+}
+.m2{
+    background-color:blue;
+    height:200px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+.m3{
+    background-color:green;
+    height:200px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+.m4{
+    background-color:orange;
+    height:200px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+}
+@media screen and (max-width: 550px) {
+ .m1{
+    background-color:red;
+    height:300px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    border-radius:5px;
+}
+.m2{
+    background-color:blue;
+    height:300px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+      border-radius:5px;
+}
+.m3{
+    background-color:green;
+    height:300px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+      border-radius:5px;
+}
+.m4{
+    background-color:orange;
+    height:300px;
+    width:97%;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+      border-radius:5px;
+}
+}
+/************************************* min-width Media Query **********/
+.m5{
+    background-color:red;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m6{
+    background-color:blue;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m7{
+    background-color:green;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m8{
+    background-color:orange;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+
+@media screen and (min-width: 1200px) {
+.m5{
+    background-color:black;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m6{
+    background-color:blue;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m7{
+    background-color:green;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m8{
+    background-color:orange;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+
+}
+
+
+@media screen and (min-width: 850px) {
+.m5{
+    background-color:pink;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m6{
+    background-color:blue;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m7{
+    background-color:green;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m8{
+    background-color:orange;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+
+}
+@media screen and (min-width: 550px) {
+.m5{
+    background-color:peru;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m6{
+    background-color:blue;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m7{
+    background-color:green;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+.m8{
+    background-color:orange;
+    height:200px;
+    width:23%;
+    float:left;
+    margin-left:20px;
+}
+
+}

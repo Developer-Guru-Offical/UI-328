@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title> Form </title>
+</head>
+<body>
+<!--------------------------- FORM DEMO -------------------------->
+<form method="get/post" action="register.php">
+    Name:<input type="text" name="name" value="" pattern="[A-Za-z]{10}" placeholder="Enter Your Name" required><br><br>
+    Email:<input type="email" name="email" value="" placeholder="Enter Your Email"required><br><br>
+    Mobile:<input type="text" name="mobile" value="" pattern="[0-9]{10}" placeholder="Enter Your Mobile" required><br><br>
+    DOB:<input type="date" name="dob" value="" min="2025-01-01" max="2025-05-07"placeholder="Enter Your DOB"><br><br>
+    Gender:<input type="radio" name="gen" value="" checked>Male <input type="radio" name="gen" value="">Female<br><br>
+    Course:<select name="course" value="">
+            <option> HTML </option>
+            <option> CSS </option>
+            <option> BOOTSTRAP </option>
+            <option> JAVASCRIPT </option>
+            <option> ANGULAR </option>
+            <option selected> REACT JS </option>
+           </select><br><br>
+   Address:<textarea name="address" value="" placeholder="Enter Your Address"></textarea><br><br>
+   <input type="checkbox" name="term" value="">Term & Conditions <br><br>
+   <input type="submit" name="submit">
+</form>
+
+
+</body>
+</html>

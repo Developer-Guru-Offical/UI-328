@@ -1,0 +1,98 @@
+.leftSection{
+    background-color:purple;
+    height:630px;
+    width:20%;
+    float:left;
+}
+
+.rightSection{
+    background-color:black;
+    height:630px;
+    width:80%;
+    float:left;
+}
+
+.logoSection{
+    background-color:green;
+    height:130px;
+    width:100%;
+    float:left; 
+}
+
+.navbarSection{
+    background-color:orangered;
+    height:500px;
+    width:100%;
+    float:left;    
+}
+
+.menuSection{
+    list-style-type: none;
+}
+
+.menuSection li{
+    padding:10px;
+}
+
+.menuSection li a{
+    text-decoration: none;
+    /* //background-color:purple; */
+    color:white;
+}
+
+.menuSection li a:hover{
+   color:blue;
+}
+
+.topnavbar{
+    background-color:red;
+    height:50px;
+    width:100%;
+    float:left;
+
+}
+.mainContainer{
+    background-color:blueviolet;
+    height:580px;
+    width:100%;
+    float:left;
+}
+
+.mainContainer h1{
+    text-align:center;
+}
+
+.aboutSection{
+    background-color:black;
+    height:580px;
+    width:100%;
+    float:left; 
+}
+.aboutSection h1{
+    text-align:center;
+    color:white;
+}
+
+.serviceSection{
+    background-color:burlywood;
+    height:580px;
+    width:100%;
+    float:left; 
+}
+
+.serviceSection h1{
+    text-align:center;
+    color:white;
+}
+
+.productSection{
+    background-color:skyblue;
+    height:580px;
+    width:100%;
+    float:left; 
+}
+
+.productSection h1{
+    color:white;
+    text-align:center;
+}
