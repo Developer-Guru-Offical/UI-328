@@ -2,6 +2,11 @@
 
 <head>
   <title> Events DEMO </title>
+  <style>
+    .borderCss {
+      border-collapse: collpase;
+    }
+  </style>
 </head>
 
 <body>
@@ -10,50 +15,87 @@
   <div id="r1"></div><br><br>
   <div id="r2"></div><br><br>
   <div id="r3"></div><br><br>
-   <div id="r4"></div><br><br>
+  <div id="r4"></div><br><br>
+  <div id="table"></div>
   <script>
-   function row1()
-   {
-      document.getElementById('r1').innerHTML='Name: <input type="text" id="name"> &nbsp;&nbsp;Mobile: <input type="text" id="Mobile">&nbsp;&nbsp;Email: <input type="text" id="email">&nbsp;&nbsp;<button onclick="row2()">ADD</button>';
-   }
+    function row1() {
+      document.getElementById('r1').innerHTML = 'Name: <input type="text" id="name"> &nbsp;&nbsp;Mobile: <input type="text" id="Mobile">&nbsp;&nbsp;Email: <input type="text" id="email">&nbsp;&nbsp;<button onclick="row2()">ADD</button>';
+    }
 
-   function row2()
-   {document.getElementById('r2').style.display='block';
-     document.getElementById('r2').innerHTML='DOB: <input type="text" id="dob"> &nbsp;&nbsp;Gender: <input type="text" id="gender">&nbsp;&nbsp;Course: <input type="text" id="course">&nbsp;&nbsp;<button onclick="row3()">ADD</button>&nbsp;&nbsp;<button onclick="remove3();">REMOVE</button>';
-   }
+    function row2() {
+      document.getElementById('r2').style.display = 'block';
+      document.getElementById('r2').innerHTML = 'DOB: <input type="text" id="dob"> &nbsp;&nbsp;Gender: <input type="text" id="gender">&nbsp;&nbsp;Course: <input type="text" id="course">&nbsp;&nbsp;<button onclick="row3()">ADD</button>&nbsp;&nbsp;<button onclick="remove3();">REMOVE</button>';
+    }
 
-    function row3()
-   {
-    document.getElementById('r3').style.display='block';
-     document.getElementById('r3').innerHTML='city: <input type="text" id="city"> &nbsp;&nbsp;Pincode: <input type="text" id="code">&nbsp;&nbsp;Landmark: <input type="text" id="landmark">&nbsp;&nbsp;<button onclick="row4()">ADD</button>&nbsp;&nbsp;<button onclick="remove2()">REMOVE</button>';
-   }
+    function row3() {
+      document.getElementById('r3').style.display = 'block';
+      document.getElementById('r3').innerHTML = 'city: <input type="text" id="city"> &nbsp;&nbsp;Pincode: <input type="text" id="code">&nbsp;&nbsp;Landmark: <input type="text" id="landmark">&nbsp;&nbsp;<button onclick="row4()">ADD</button>&nbsp;&nbsp;<button onclick="remove2()">REMOVE</button>';
+    }
 
-    function row4()
-   {
-      document.getElementById('r4').style.display='block';
-     document.getElementById('r4').innerHTML='Adhar: <input type="text" id="adhar"> &nbsp;&nbsp;Pancard: <input type="text" id="pan">&nbsp;&nbsp;Address: <input type="text" id="address">&nbsp;&nbsp;<button>SUBMIT</button>&nbsp;&nbsp;<button onclick=remove1();>REMOVE</button>';
-   }
+    function row4() {
+      document.getElementById('r4').style.display = 'block';
+      document.getElementById('r4').innerHTML = 'Adhar: <input type="text" id="adhar"> &nbsp;&nbsp;Pancard: <input type="text" id="pan">&nbsp;&nbsp;Address: <input type="text" id="address">&nbsp;&nbsp;<button onclick="table()">SUBMIT</button>&nbsp;&nbsp;<button onclick=remove1();>REMOVE</button>';
+    }
 
-   function remove1()
-   {
-     //document.getElementById('r4').remove();
-     document.getElementById('r4').style.display='none';
-   }
+    function remove1() {
+      //document.getElementById('r4').remove();
+      document.getElementById('r4').style.display = 'none';
+    }
 
-   function remove2()
-   {
-       document.getElementById('r3').style.display='none';
-   }
+    function remove2() {
+      document.getElementById('r3').style.display = 'none';
+    }
 
-    function remove3()
-   {
-       document.getElementById('r2').style.display='none';
-   }
+    function remove3() {
+      document.getElementById('r2').style.display = 'none';
+    }
 
-     function remove4()
-   {
-       document.getElementById('r1').style.display='none';
-   }
+    function remove4() {
+      document.getElementById('r1').style.display = 'none';
+    }
+
+    function table() {
+
+      document.getElementById('table').innerHTML =
+        `<table border="1" style="border-collapse:collapse">
+                         <tr>
+                          <th>Name</th>
+                          <th>Mobile</th>
+                          <th>Email</th>
+                          <th>DOB</th>
+                          <th>Gender</th>
+                          <th>Course</th>
+                          <th>City</th>
+                          <th>Pincode</th>
+                          <th>Landmark</th>
+                          <th>Adhar</th>
+                          <th>Pan Card</th>
+                          <th>Address</th>
+                         </tr>
+                          <tr>
+                          <td><input type="text" id="name1"></td>
+                          <td>${name}</td>
+                          <td>Email</td>
+                          <td>DOB</td>
+                          <td>Gender</td>
+                          <td>Course</td>
+                          <td>City</td>
+                          <td>Pincode</td>
+                          <td>Landmark</td>
+                          <td>Adhar</td>
+                          <td>Pan Card</td>
+                          <td>Address</td>
+                         </tr>
+                         </table>`
+      var name = document.getElementById('name').value;
+      // if(name)
+      // {
+      //   alert('alay ber ka');
+      // }else{
+      //   alert('nhi ala');
+      // }
+      document.getElementById('name1').value = name;
+    }
   </script>
 </body>
 
