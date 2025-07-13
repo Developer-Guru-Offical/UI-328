@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title> String Methods </title>
+</head>
+<body>
+    <script>
+/********************************* Length ************************************/
+
+      let x="Have a nice day";
+      console.log(x.length);
+      
+      let x1="Have a nice day";  
+      console.log(x1.toUpperCase());
+
+      let x2="HAVE A NICE DAY";
+      console.log(x2.toLowerCase());
+
+      let x3="Have a nice Day";
+      //console.log(x3.slice(7,11));
+        console.log(x3.slice(-11,-6)); //slice(0,10)
+
+      let x4="Have a nice DaY...!";
+      console.log(x4.repeat(4));
+
+      let x5="Have a nice Day";
+      console.log(x5.replace('nice','Good'));
+
+      let x6="Have a nice Day..!";
+      console.log(x6.indexOf('Day'));
+
+      let x7="Have a NIce DaY...!";
+      console.log(x7.search('DaY'));
+
+      let x8="Have a Nice DaY..!";
+      console.log(x8.concat('Developer Guru..!'));
+
+    //   let x9="have a nice DaY..!";
+    //   let x10=x9.trim();
+    //   console.log(x10);
+
+     let x11="Have a NIce DaY..!";
+     console.log(x11.match('NIce'));
+
+     let x12="have a nice DaY...!";
+     console.log(x12.includes('DaY'));
+
+     let x13="Have a NIce Day..!";
+     let x14=(x13.split(" ")); // convert string to Array
+     console.log(x13.split(" "));
+     console.log(x14[2])
+
+     let x15="Have a NICE DAY..!";
+     console.log(x15.toString());
+
+     let x16="Have a nice Day..!";
+     console.log(x16.charAt(12));
+
+    let x17="Have a nice Day..!";
+     console.log(x17.charCodeAt(12));
+
+
+    </script>
+</body>
