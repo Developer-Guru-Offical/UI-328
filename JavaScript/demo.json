@@ -1,0 +1,8 @@
+    Stud_details ={
+        [
+            { 'name': 'pratik', 'Age': 30, 'Gender': 'Male' },
+            { 'name': 'Shrikant', 'Age': 33, 'Gender': 'Male' },
+            { 'name': 'Shubham', 'Age': 31, 'Gender': 'Male' },
+            { 'name': 'Shrikant', 'Age': 34, 'Gender': 'Male' },
+            { 'name': 'abiraj', 'Age': 28, 'Gender': 'Male' }
+        ]}

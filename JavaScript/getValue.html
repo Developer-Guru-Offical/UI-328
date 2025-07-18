@@ -1,0 +1,24 @@
+<script>
+  document.write(localStorage.getItem('course'));
+  document.write(sessionStorage.getItem('day'));
+
+ let xx=100;// global value
+ function abc()
+ {
+    console.log(xx);
+    let xxx=200;
+    function xyz()
+    {
+      console.log(xxx);//
+      console.log(xx);// ?????
+    }
+    xyz();
+ }
+ abc();
+
+
+
+
+
+</script>
+
