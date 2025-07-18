@@ -1,0 +1,36 @@
+<script>
+    // 1. String 
+    // 2. Array 
+    // 3. Object 
+    // [] + {} = JSON (JavaSCript Object NOtation)
+    // Moc Data 
+
+    //1. JsonParse()// string to object
+    //2. JsonStringfy() // object to string 
+
+  //    front-end         ------------------------->             server
+   // (string format)                                        (object format)
+
+let Stud_details =
+        [
+            { 'name': 'pratik', 'Age': 30, 'Gender': 'Male' },
+            { 'name': 'Shrikant', 'Age': 33, 'Gender': 'Male' },
+            { 'name': 'Shubham', 'Age': 31, 'Gender': 'Male' },
+            { 'name': 'Shrikant', 'Age': 34, 'Gender': 'Male' },
+            { 'name': 'abiraj', 'Age': 28, 'Gender': 'Male' }
+        ]
+ //console.log(Stud_details);
+//  Stud_details.filter((Stud_details.Age>25){
+//         return Stud_details;
+//  })
+ {Stud_details.map(item,index)//0,1,3,4,5
+    {
+     retrun `<ul>
+      <li>Name:${item.name}</li>
+      <li> Age:${item.Age}</li>
+       <li>Gender:${item.Gender}</li>
+    </ul>`
+    }
+ }
+  
+</script>
