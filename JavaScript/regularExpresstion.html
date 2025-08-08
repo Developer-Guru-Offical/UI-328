@@ -10,19 +10,35 @@
 // - [/pattern/modifier]
 
 let x="Have a NIce DaY...!";
-console.log(x.search(/Day/i));  // Search
+//console.log(x.search(/Day/i));  // Search
 
 let xx="Have a Good DaY..!";
-console.log(xx.replace(/good/i,'Nice'));
+//console.log(xx.replace(/good/i,'Nice'));
 
 
 let xxx="Have A great daY..!";
 let Ans=xxx.match(/[a-g]/ig);
-console.log(Ans);
+//console.log(Ans);
 
 let xxxx='9922784377 have  a nice day';
 let Ans1=xxxx.match(/[1-3]/ig);
-console.log(Ans1);
+//console.log(Ans1);
+
+let x1="have a nice DaY..!100% true";
+let Ans2=x1.match(/\w/ig);
+console.log(Ans2);
+
+let x2="have a nice DaY..!100% true";
+let Ans3=x1.match(/\W/ig);
+console.log(Ans3);
+
+let x3="9922784377 %$#&*";
+let Ans4=x3.match(/\d/ig);
+console.log(Ans4);
+
+let x4="9922784377 %$#&*";
+let Ans5=x4.match(/\D/ig);
+console.log(Ans5);
 
 
 

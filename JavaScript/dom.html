@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        DOM
+    </title>
+</head>
+<body>
+    <p id="ABC"> hey, hello </p>
+    <p class="PQR"> Have a Nice DaY...!</p>
+    <h1> Have a Nice DaY...!</h1>
+    <script>
+        document.getElementById('ABC').innerHTML="how Are you..!";
+        document.getElementById('ABC').style.color='red';
+        document.getElementById('ABC').remove();
+        document.getElementsByClassName('PQR')[0].innerHTML='heloooooo';
+        document.getElementsByClassName('PQR')[0].style.backgroundColor = 'blue'
+         document.getElementsByClassName('PQR')[0].style.color = 'white'
+         document.getElementsByTagName('h1')[0].innerHTML="Have a Good DaY..!"
+         document.getElementsByTagName('h1')[0].style.color='red'
+        
+         /****************************** BOM **************************/
+         //window.alert('Hey Hi Heloo');
+         //window.open('https://www.google.com');
+         //window.prompt('Please enter your name');
+         //window.confirm('Are you sure to delete this Msg?');
+         //window.blur('https://www.facebook.com');
+         // Open a new window
+//let newWindow = window.open("https://example.com", "_blank");
+
+// Blur the current window
+//window.blur();
+
+// Focus the new window
+//newWindow.focus();
+
+//window.print('hi hello');
+
+       
+      
+    </script>
+</body>
+
+</html>
