@@ -1,0 +1,40 @@
+<script>
+    // API intigration 
+
+    // 3. Async function - 
+    // 4. await function 
+
+    // - fillfull / success 
+    // - Reject / failed 
+    // - pending 
+
+    // Request ----> Backend(process)
+
+    // 1. success (Resolve)
+    // 2. failed   (Reject)
+    // 3. pending
+
+    let checkpromise = new Promise((resolve, reject) => {
+    let x=10;
+    if (x<20) 
+    {
+         setTimeout(() => {
+             resolve("Your promise has been successfully resolved..!");
+         }, 6000);
+            
+    }
+    else 
+    { 
+        setTimeout(()=>{
+            reject("Something Happen Wrong, Please try Again...!!");
+        },6000);
+          
+    }
+});
+checkpromise
+    .then((message) => console.log(message)) // On success resolve
+    .catch((error) => console.error(error)); // On failure Reject
+
+
+
+</script>
