@@ -1,0 +1,13 @@
+.textCss{
+    background-color:purple;
+    color:white;
+    text-align: center;
+}
+
+.bodySection{
+     width:100%;
+     height:570px;
+     text-align:center;
+     color:white;
+     background-color: red;
+}
