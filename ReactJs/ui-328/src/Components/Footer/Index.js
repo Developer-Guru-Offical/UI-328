@@ -2,7 +2,9 @@ import './Footer.css';
 
 const Footer=()=>{
   return <>
-    <h1 className='textCss'> THIS IS THE FOOTER </h1>
+    <p className='textCss'>
+      <h5>All right and reserved By Developer Guru @2025</h5> 
+    </p>
   </>
 
 }

@@ -7,12 +7,14 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import './index.css';
 import App from './App';
 import Home from './Pages/Home';
+import Blog from './Pages/Blog/index.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App/> */}
+     <Blog/>
      <Home/>
   </React.StrictMode>
 );

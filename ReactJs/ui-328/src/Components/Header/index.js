@@ -1,14 +1,26 @@
 import './Header.css';
 import logo from '../../assests/images/dg-logo.jpeg';
 
-const Header=({name123,name2,name3,name4})=>{
-  console.log(name3);
-  console.log({name4});
+const Header=()=>{
   return <>
-    <h1 className='textCss'> Welcome to {name123},{name2} </h1>
-    <h5>Wlecome to: {name3[0]}</h5>
-    <img src={logo}></img>
-  </>
+  <div className='leftSection'>
+    <img src={logo} className='logoCss'/>
+  </div>
+  <div className='rightSection'>
+     <ul className='navbar1'>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">REVIEW</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">LOGIN</a></li>
+      <li><a href="#">REGISTER</a></li>
+      </ul>
+  </div>
+</>
 
 }
 export default Header;
