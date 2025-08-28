@@ -4,3 +4,38 @@
     color:white;
     text-align: center;
 }
+
+.logoCss{
+   height:70px;
+   width:150px;
+   margin:15px 0px 20px 50px; 
+}
+
+.leftSection{
+    width:20%;
+    height:100px;
+    float:left;
+}
+
+.rightSection{
+    width:80%;
+    height:100px;
+    float:left;
+}
+
+.navbar1{
+    list-style-type: none;
+}
+
+.navbar1 li{
+ margin:24px 0px 10px 0px;
+}
+.navbar1 li a{
+    text-decoration: none;
+    color:black;
+    float: left;
+    padding: 7px;
+    font-weight: 500;
+    border-bottom:2px solid blueviolet;
+    margin-left:10px;
+}

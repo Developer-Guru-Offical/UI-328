@@ -4,10 +4,50 @@
     text-align: center;
 }
 
+.headerSection{
+    width:100%;
+    float:left;
+    height:100px;
+}
+
 .bodySection{
      width:100%;
-     height:570px;
+     height:530px;
      text-align:center;
      color:white;
      background-color: red;
+     float:left;
+}
+
+.footerSection{
+    width:100%;
+    float:left;
+    height:50px;
+}
+
+.courseSection
+{
+    width:100%;
+    height:400px;
+    float:left;
+   
+}
+
+.leftCourseSection{
+    width:100%;
+    float:left;
+    height:50px;
+    }
+.leftCourseSection h6{
+    color:purple;
+    text-align: center;
+    padding:15px 0px 0px 0px;
+    
+}
+.rightCourseSection
+{
+   width:100%;
+    float:left;
+    height:520px;
+   
 }
