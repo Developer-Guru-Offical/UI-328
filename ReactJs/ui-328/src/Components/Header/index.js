@@ -1,6 +1,6 @@
 import './Header.css';
 import logo from '../../assests/images/dg-logo.jpeg';
-import { BrowserRouter as Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 const Header=()=>{
   return <>
