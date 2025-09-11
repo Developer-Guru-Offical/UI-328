@@ -2,21 +2,14 @@
 import {style} from './Product.module.scss';
 import Header from '../../Components/Header';
 import { useEffect, useState } from 'react';
+import {studDetails} from '../Mockdata';
+import { useNavigate } from "react-router-dom";
+
 
 const Product=()=>{
 
-const studDetails=[
-                  {'name':'Harsharda','email':'harshada@gmail.com','mob':'9837376736'},
-                  {'name':'mayuri','email':'mayuri@gmail.com','mob':'9837376736'},
-                  {'name':'samikasha','email':'samiksha@gmail.com','mob':'9837376736'},
-                  {'name':'mayuri','email':'mayuri@gmail.com','mob':'9837376736'},
-                  {'name':'sangita','email':'sangita@gmail.com','mob':'9837376736'},
-                  {'name':'varsha','email':'varsha@gmail.com','mob':'9837376736'},
-                  {'name':'Tejas','email':'Tejas@gmail.com','mob':'9837376736'},
-                  {'name':'vaibhav','email':'vaibhav@gmail.com','mob':'9837376736'},
-                 ];
-
 const [studentDetails,setStudentDetails]=useState(studDetails);
+ const navigate = useNavigate();
 
 console.log(studentDetails,'studentDetails@@##');
 useEffect(()=>{
@@ -29,6 +22,12 @@ const clickMe=()=>{
    setStudentDetails('Happy Teacher DaY...!');
 }
 
+const redirect=(id)=>{
+   console.log('ID!',id);
+   navigate("/student_details"); 
+   localStorage.setItem('stud_id',id); // setting id value in localstorage 
+}
+
  return <>
        <Header/>
        <h1> Student Details </h1>
@@ -36,9 +35,11 @@ const clickMe=()=>{
       {studentDetails.map((item,index)=>{
        return <div className='card mt-4'>
         <div className='card-body' key={index}>
+               <p>Id: {item.id}</p>
               <p>Name:{item.name} </p>
               <p>Email:{item.email} </p>
               <p>Mobile:{item.mob} </p>
+              <button className='btn btn-danger' onClick={()=>redirect(item.id)}>View</button>
          </div>
         </div>   
        })}

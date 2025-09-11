@@ -9,6 +9,7 @@ import Product from '../Product';
 import Review from '../Review';
 import Services from '../Services';
 import NotFound from "../NotFound";
+import Student_Details from "../../Components/Student_Details";
 
 const Routess=()=>{
 
@@ -21,6 +22,7 @@ return <Routes>
       <Route path="/Product" element={<Product />} />
       <Route path="/Review" element={<Review />} />
       <Route path="/Service" element={<Services />} />
+      <Route path="/student_details" element={<Student_Details />} />
       <Route path="*" element={<NotFound />} />
      </Routes>
 }
