@@ -22,10 +22,10 @@ const clickMe=()=>{
    setStudentDetails('Happy Teacher DaY...!');
 }
 
-const redirect=(id)=>{
-   console.log('ID!',id);
+const redirect=(item)=>{
+   console.log('ID!',item);
    navigate("/student_details"); 
-   localStorage.setItem('stud_id',id); // setting id value in localstorage 
+   localStorage.setItem('stud_id',JSON.stringify(item)); // setting id value in localstorage 
 }
 
  return <>
@@ -39,7 +39,7 @@ const redirect=(id)=>{
               <p>Name:{item.name} </p>
               <p>Email:{item.email} </p>
               <p>Mobile:{item.mob} </p>
-              <button className='btn btn-danger' onClick={()=>redirect(item.id)}>View</button>
+              <button className='btn btn-danger' onClick={()=>redirect(item)}>View</button>
          </div>
         </div>   
        })}

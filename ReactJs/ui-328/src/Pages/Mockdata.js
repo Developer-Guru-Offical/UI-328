@@ -8,3 +8,7 @@ export const studDetails= [
                   {'id':'7','name':'Tejas','email':'Tejas@gmail.com','mob':'9837376736'},
                   {'id':'8','name':'vaibhav','email':'vaibhav@gmail.com','mob':'9837376736'},
                  ];
+
+export const studMoreDetails=[
+                  {'Gender':'female','bgroup':'AB+','address':'Karvenagar','city':'pune','landmark':'Near Bus Stop'},
+                  ];
