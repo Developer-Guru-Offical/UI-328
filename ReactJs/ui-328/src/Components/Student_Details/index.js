@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import {studMoreDetails} from '../../Pages/Mockdata';
+import Header from '../Header';
+import { useNavigate } from "react-router-dom";
 
 const Student_Details=()=>{
 
     const[studMoreDetails1,setStudMoreDetails1]=useState(studMoreDetails);
     const[studDetails,setStudeDetails]=useState({});
+    const navigate = useNavigate();
     
     useEffect(()=>{
       const stud_data=JSON.parse(localStorage.getItem('stud_id')) || {}; 
@@ -12,7 +15,12 @@ const Student_Details=()=>{
       //setStudMoreDetails1(studMoreDetails);
     },[]);
 
+    const redirectPage=()=>{
+         navigate("/Product"); 
+    }
+
  return <>
+ <Header/>
    <h1> Student Profile Page </h1>
      <div className='container'>
       <div className='card mt-4'>
@@ -27,6 +35,7 @@ const Student_Details=()=>{
               <p>City: {studMoreDetails1[0].city}</p>
               <p>Landmark: {studMoreDetails1[0].landmark}</p> 
        </div>
+       <button class='btn btn-primary' onClick={()=>redirectPage()}>Back</button>
         </div>   
         </div>
  </>

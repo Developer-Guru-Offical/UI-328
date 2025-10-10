@@ -10,6 +10,7 @@ import Review from '../Review';
 import Services from '../Services';
 import NotFound from "../NotFound";
 import Student_Details from "../../Components/Student_Details";
+import AddCandidate from "../../Components/AddCandidate";
 
 const Routess=()=>{
 
@@ -23,6 +24,7 @@ return <Routes>
       <Route path="/Review" element={<Review />} />
       <Route path="/Service" element={<Services />} />
       <Route path="/student_details" element={<Student_Details />} />
+      <Route path="/addCandidate" element={<AddCandidate />} />
       <Route path="*" element={<NotFound />} />
      </Routes>
 }
