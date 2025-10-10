@@ -4,6 +4,7 @@ import Header from '../../Components/Header';
 import { useEffect, useState } from 'react';
 import {studDetails} from '../Mockdata';
 import { useNavigate } from "react-router-dom";
+import ErrorMsg from '../../Components/ErrorMsg';
 
 
 const Product=()=>{
@@ -32,7 +33,7 @@ const redirect=(item)=>{
        <Header/>
        <h1> Student Details </h1>
        <div className='container'>
-      {studentDetails.map((item,index)=>{
+         {studentDetails?.length>0 ?  studentDetails.slice(0,3).map((item,index)=>{
        return <div className='card mt-4'>
         <div className='card-body' key={index}>
                <p>Id: {item.id}</p>
@@ -42,7 +43,8 @@ const redirect=(item)=>{
               <button className='btn btn-danger' onClick={()=>redirect(item)}>View</button>
          </div>
         </div>   
-       })}
+       }): <ErrorMsg/>}
+     
       </div>
        {/* <button className='btn btn-danger' onClick={clickMe}> clickMe </button> */}
     </>
