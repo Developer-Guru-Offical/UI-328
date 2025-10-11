@@ -5,23 +5,25 @@ import { useEffect, useState } from 'react';
 import {studDetails} from '../Mockdata';
 import { useNavigate } from "react-router-dom";
 import ErrorMsg from '../../Components/ErrorMsg';
+import {fetchStudentDetails} from '../Service/api';
 
 
 const Product=()=>{
 
-const [studentDetails,setStudentDetails]=useState(studDetails);
+const [studentDetails,setStudentDetails]=useState();
  const navigate = useNavigate();
 
-console.log(studentDetails,'studentDetails@@##');
+//console.log(studentDetails,'studentDetails@@##');
 useEffect(()=>{
-  console.log('calling UseEffect');
+  //console.log('calling UseEffect');
+  getStudentDetails();
   //clickMe();
 },[]);
 
-const clickMe=()=>{
-   console.log('Click Me Calling...!');
-   setStudentDetails('Happy Teacher DaY...!');
-}
+// const clickMe=()=>{
+//    console.log('Click Me Calling...!');
+//    setStudentDetails('Happy Teacher DaY...!');
+// }
 
 const redirect=(item)=>{
    console.log('ID!',item);
@@ -29,18 +31,37 @@ const redirect=(item)=>{
    localStorage.setItem('stud_id',JSON.stringify(item)); // setting id value in localstorage 
 }
 
+const getStudentDetails=async()=>{
+  try{
+   const response= await fetchStudentDetails();
+   console.log(response,'Response Inside GetStudentDetails@@##');
+   if(response.status==200)
+   {
+      setStudentDetails(response.data);
+   }
+  }
+  catch(error)
+  {
+   console.log(error);
+  }
+  
+
+
+}
+
  return <>
        <Header/>
        <h1> Student Details </h1>
        <div className='container'>
-         {studentDetails?.length>0 ?  studentDetails.slice(0,3).map((item,index)=>{
+         {studentDetails?.length>0 ?  studentDetails.slice(0,50).map((item,index)=>{
        return <div className='card mt-4'>
         <div className='card-body' key={index}>
                <p>Id: {item.id}</p>
-              <p>Name:{item.name} </p>
-              <p>Email:{item.email} </p>
-              <p>Mobile:{item.mob} </p>
-              <button className='btn btn-danger' onClick={()=>redirect(item)}>View</button>
+               <p>Title:{item.title} </p>
+              <p>Description:{item.body} </p>
+             
+              {/* <p>Mobile:{item.mob} </p> */}
+              <button className='btn btn-danger' onClick={()=>redirect(item.id)}>View</button>
          </div>
         </div>   
        }): <ErrorMsg/>}
