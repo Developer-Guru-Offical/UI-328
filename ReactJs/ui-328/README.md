@@ -12,3 +12,17 @@
 10. css implementaion 
 11. Scss install & use 
 12. Routing 
+
+
+
+
+
+
+
+     ABC       PQR          XYZ         LMN 
+       |       |             |           |
+     A B       C D          L M          Q P
+       |       |
+       Z       W
+               |
+               G

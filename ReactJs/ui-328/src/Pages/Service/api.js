@@ -1,4 +1,4 @@
-
+import axios from "axios";
 
 export const fetchStudentDetails=async()=>{
        return fetch('https://jsonplaceholder.typicode.com/posts')
@@ -24,4 +24,14 @@ export const fetchUpdateStudentDetails=async(studId)=>{
             }) 
         });
     
+}
+
+export const getImageDetails=async()=> {
+  try {
+    const response = await axios.get('https://api.slingacademy.com/v1/sample-data/photos');
+    console.log(response);
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
 }

@@ -2,11 +2,14 @@
 import logo1 from './logo.svg';
 import './App.css';
 import Routess from './Pages/Routess';
+import MyProvider from './Pages/Context/MyProvider ';
 
 function App() {
   return (
     <div className="App">
-     <Routess/>
+      <MyProvider>
+       <Routess/>
+     </MyProvider>
     </div>
   );
 }

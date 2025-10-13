@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
+import MyContext from "../../Pages/Context/MyContext";
+
 import {studMoreDetails} from '../../Pages/Mockdata';
 import Header from '../Header';
 import { useNavigate } from "react-router-dom";
@@ -6,12 +8,15 @@ import {fetchUpdateStudentDetails} from '../../Pages/Service/api';
 
 const Student_Details=()=>{
 
-    const[studMoreDetails1,setStudMoreDetails1]=useState();
+    const[studMoreDetails1,setStudMoreDetails1]=useState(studMoreDetails);
     const[studDetails,setStudeDetails]=useState();
     const[studId,setStudId]=useState();
     const navigate = useNavigate();
+    const { user} = useContext(MyContext);
+
 
     console.log(studId,'studId@@###');
+    console.log(user,'User@@####');
     
     useEffect(()=>{
       const stud_Id=JSON.parse(localStorage.getItem('stud_id')); 
@@ -48,7 +53,7 @@ const Student_Details=()=>{
 
  return <>
  <Header/>
-   <h1> Student Profile Page </h1>
+   <h1> Student Profile Page, Welcome {user.clinetName}</h1>
      <div className='container'>
       <div className='card mt-4'>
         <div className='card-body'>
